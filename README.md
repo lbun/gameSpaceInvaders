@@ -1,5 +1,7 @@
 # Game of Space Invaders 
 
+![alt text] (https://github.com/lbun/gameSpaceInvaders/blob/master/SpaceInvaders.png)
+
 ### Game created in Python with Pygame Library
 
 Simple game created with few linees of code. It's a quick start for using pygame library.
