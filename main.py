@@ -1,5 +1,4 @@
 import pygame
-from PIL import Image
 import random
 import math
 
@@ -15,13 +14,14 @@ background = pygame.image.load("background.png")
 #Initializing pygame mixer
 pygame.mixer.init()
 
-# Title and Icon
+# Set a title
 pygame.display.set_caption("Space Invaders")
 
 # Converting image from png to bmp
 #img = Image.open('ufo.png')
 #img.save('ufo.bmp')
 
+# Set an icon
 icon = pygame.image.load('ufo.png') 
 pygame.display.set_icon(icon)
 
@@ -101,7 +101,7 @@ while running:
     # RGB - Red, Green, Blue
     screen.fill((0,0,0))
 
-    # Background Image
+    # Use the background Image
     screen.blit(background, (0,0))
 
     for event in pygame.event.get():
@@ -134,7 +134,7 @@ while running:
     
     # Enemy movement and boundaries     
     for i in range(num_of_enemies):
-        
+
         # Game Over
         if enemyY[i] > 440:
             for j in range(num_of_enemies):
@@ -164,7 +164,7 @@ while running:
             enemyY[i] = random.randint(50,150)
         enemy(enemyX[i], enemyY[i], i)
 
-    # Bullet movemeent
+    # Check Bullet movemeent
     if bulletY <= 0:
         bulletY = 480
         bullet_state = "ready"
