@@ -1,6 +1,6 @@
 # Game of Space Invaders 
 
-![alt text] (https://github.com/lbun/gameSpaceInvaders/blob/master/SpaceInvaders.png)
+![alt text](https://github.com/lbun/gameSpaceInvaders/blob/master/SpaceInvaders.png?raw=true)
 
 ### Game created in Python with Pygame Library
 
